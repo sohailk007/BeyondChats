@@ -1,0 +1,13 @@
+Django
+djangorestframework
+django-cors-headers
+django-filter
+PyPDF2
+langchain
+faiss-cpu
+sentence-transformers
+google-generativeai
+python-dotenv
+Pillow
+celery
+redis
