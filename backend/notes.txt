@@ -1,0 +1,8 @@
+# Start Redis (required for Celery)
+redis-server
+
+# Start Celery worker
+celery -A backend worker --loglevel=info
+
+# Start Celery beat (for periodic tasks)
+celery -A backend beat --loglevel=info
