@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+}
+
+/* PDF Viewer Styles */
+.pdf-container {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.pdf-page {
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Quiz Styles */
+.quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.question-card {
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Progress Chart Styles */
+.progress-chart {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+/* Loading Animation */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .pdf-container {
+    height: 400px;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Material-UI overrides */
+.MuiDrawer-paper {
+  border-right: 1px solid #e2e8f0 !important;
+}
+
+.MuiAppBar-root {
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1) !important;
+}

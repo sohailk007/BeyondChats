@@ -1,4 +1,5 @@
 # Start Redis (required for Celery)
+docker run --name redis -p 6379:6379 -d redis
 redis-server
 
 # Start Celery worker
@@ -6,3 +7,5 @@ celery -A backend worker --loglevel=info
 
 # Start Celery beat (for periodic tasks)
 celery -A backend beat --loglevel=info
+
+
